@@ -1,0 +1,3 @@
+include ':umetripSdkLibrary'
+//include ':umetripSdkFlightStatusWithCki'
+include ':testPluginJar'

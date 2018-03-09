@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.rogery.testpluginjar"
+        minSdkVersion 17
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles 'proguard.cfg'
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横SDK_AND_s01_02.00.0612/testPluginJar/keystore/debug.keystore')
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':umetripSdkLibrary')
+    //    compile project(':umetripSdkFlightStatusWithCki')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+}
+
+
+
+android {
+    lintOptions {
+        abortOnError false
+    }
+}

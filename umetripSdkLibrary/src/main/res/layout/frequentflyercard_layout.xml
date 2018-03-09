@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_grey_bg"
+    android:orientation="vertical" >
+
+    <com.umetrip.ckisdk.view.SystemTitle
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" 
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_input_ffp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_airline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ListItemHeight"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/ffc_card_textstyle"
+                        android:text="@string/utillist_airlines"/>
+
+                    <RelativeLayout
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3" >
+
+                        <TextView
+                            android:id="@+id/tv_card_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:singleLine="true"
+                            android:textColor="@color/check_text_input_color"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/arrow_right" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="@color/divider_gray" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cardnum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/ListItemHeight"
+                    android:clickable="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/white"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/card_num"
+                        style="@style/ffc_card_textstyle"/>
+
+                    <EditText
+                        android:id="@+id/et_cardno"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        style="@style/check_in_input_textstyle"
+                        android:inputType="number"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_next"
+                    style="@style/check_login_button_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center"
+                    android:text="@string/ensure" />
+
+              
+            </LinearLayout>
+            
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_show_title"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:background="#aaffffff"
+            android:textSize="18sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15.0dip"
+            android:textColor="@color/indicator_green"/>
+    </FrameLayout>
+
+</LinearLayout>

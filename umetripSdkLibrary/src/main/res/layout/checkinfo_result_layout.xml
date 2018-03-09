@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffafafa" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        android:orientation="vertical" >
+
+        <com.umetrip.ckisdk.view.SystemTitle
+            android:id="@+id/title_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="22dip"
+            android:background="@drawable/xiala"
+            android:gravity="center"
+            android:textColor="#ffffffff" />
+
+        <LinearLayout
+            android:id="@+id/ll_s"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/checkinfo_bg"
+            android:orientation="vertical"
+            android:paddingBottom="15.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="值机成功"
+                android:textColor="#ff606366"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_success"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/checkinfo_result_bg"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_f"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/checkinfo_bg"
+            android:orientation="vertical"
+            android:paddingBottom="15.0dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5.0dip"
+                android:text="未成功办理值机"
+                android:textColor="#ffeb484f"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_fail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginTop="5.0dip"
+                android:background="@drawable/checkinfo_result_bg"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="注意事项"
+            android:textColor="#ff656565"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27.0dip"
+            android:layout_marginRight="27.0dip"
+            android:layout_marginTop="5.0dip"
+            android:textColor="#ffc6c6c6"
+            android:textSize="14sp" />
+
+        <View
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10.0dip"
+            android:text="找不到车去机场?没人接机?快试试接送机吧!"
+            android:textColor="#ffc6c6c6"
+            android:textSize="14sp" />
+
+        <FrameLayout 
+            android:layout_marginTop="15dip"
+            android:id="@+id/fl_print"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:background="@android:color/white"
+            android:visibility="gone">
+            
+            <LinearLayout 
+                android:id="@+id/ll_print"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="invisible">
+				                
+                <TextView 
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="航旅纵横将发送登机牌的pdf文件至您的邮箱.该文件以A4纸打印后,您可持此值机."/>
+                
+                <LinearLayout 
+                    android:layout_marginTop="10dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+					
+                    <EditText 
+                        android:id="@+id/et_email"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入邮箱地址"/>
+                    
+                    <Button 
+                        android:id="@+id/bt_send"
+                        android:layout_marginLeft="10dip"
+                        android:layout_width="60dip"
+                        android:layout_height="wrap_content"
+                        android:text="发送"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/button_green"/>
+                    
+                </LinearLayout>
+                
+                <TextView 
+                    android:layout_marginTop="10dip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如长时间未收到邮件,请检查是否作为广告邮件被拦截"/>
+            </LinearLayout>
+            
+            <Button 
+                android:id="@+id/bt_print"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_green"
+                android:text="我要打印登机牌"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"/>
+            
+        </FrameLayout>
+        
+         <Button
+	        android:id="@+id/btn_finish"
+	        style="@style/check_login_button_textstyle"
+	        android:layout_gravity=""
+	        android:layout_width="match_parent"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginTop="20dp"
+	        android:gravity="center"
+	        android:text="完成"/>
+    </LinearLayout>
+
+</ScrollView>

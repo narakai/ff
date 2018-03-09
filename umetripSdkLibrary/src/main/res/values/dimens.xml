@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="max_seat_size">50dip</dimen>
+    <dimen name="min_seat_size">26dip</dimen>
+    <dimen name="seatnum_width_size">65dip</dimen>
+    <dimen name="seatnum_text_size">28sp</dimen>
+    <dimen name="checkinfo_cp_text_size">12sp</dimen>
+    <dimen name="LargePadding">24.0dip</dimen>
+    <dimen name="NormalListHeight">64.0dip</dimen>
+    <dimen name="NormalButtonHeight">48.0dip</dimen>
+    <dimen name="ListItemHeight">50.0dip</dimen>
+    
+    <dimen name="cki_text_big_size">22sp</dimen>
+    <dimen name="cki_text_middle_size">18sp</dimen>
+    <dimen name="cki_text_small_size">14sp</dimen>
+    
+</resources>

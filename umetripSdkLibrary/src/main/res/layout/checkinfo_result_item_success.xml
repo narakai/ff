@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5.0dip"
+    android:paddingBottom="5.0dip">
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+	    <TextView 
+	        android:layout_marginLeft="7.0dip"
+	        android:id="@+id/tv_name"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#ff606366"
+			android:textSize="16sp"/>
+	    
+	    <TextView 
+	        android:layout_marginLeft="7.0dip"
+	        android:id="@+id/tv_seat"
+	        android:layout_marginTop="3.0dip"
+	        android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="13sp"
+			android:textColor="#ffa1a1a1"/>
+    </LinearLayout>
+    
+	<Button 
+	    android:id="@+id/bt_boarding"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="查看登机牌"
+		android:background="@drawable/checkinfo_blue_button"
+		android:textColor="#ffffffff"
+		android:layout_alignParentRight="true"
+		android:visibility="gone"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="7.0dip"/>
+	<Button 
+	    android:id="@+id/bt_sendmsg"
+	    android:layout_toLeftOf="@id/bt_boarding"
+	    android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="发送短信"
+		android:background="@drawable/checkinfo_gree_button"
+		android:textColor="#ffffffff"
+		android:visibility="gone"
+		android:layout_centerVertical="true"
+		android:layout_marginRight="7.0dip"/>
+    
+</RelativeLayout>

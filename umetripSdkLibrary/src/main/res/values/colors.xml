@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="general_grey_bg">#eeeded</color>
+    <drawable name="checkinfo_bg_drawalbe">#fffafafa</drawable>
+    <drawable name="checkinfo_bg_drawalbe_down">#ff66a829</drawable>
+    <drawable name="white_d">@android:color/white</drawable>
+   
+    <color name="transparent">#00000000</color>
+	<color name="indicator_green">#ff45c01a</color>
+	<color name="white">#ffffffff</color>
+	<color name="black">#000000</color>
+	<color name="divider_gray">#ffcbd1d9</color>
+	
+	<color name="checkinfo_txt_drawalbe">#ff606366</color>
+    <color name="checkinfo_txt_drawalbe_down">#fffafafa</color>
+	<color name="cki_result_title">#ff858585</color>
+    <color name="cki_result_content">#ff484848</color>
+	<color name="check_select_seat_bg">#f4f4f4</color>
+	
+	 <!-- 头部导航栏颜色 -->
+	<color name="titlebar_bg_normal">#ff46acef</color>
+	<color name="titlebar_bg_touched">#ff1897ed</color>
+	
+	<!-- 按钮颜色 -->
+	<color name="btn_normal">#ff5b45</color>
+	<color name="btn_touched">#e5513d</color>
+	<color name="btn_disabled">#a3a3a3</color>
+	
+	<!-- 按钮文字颜色 -->
+	<color name ="check_btn_text_color">#ffffff</color>
+	<!-- 输入框文字颜色 -->
+	<color name ="check_text_input_color">#ff484848</color>
+	<color name ="check_text_input_hint_color">#ff858585</color>
+	
+	<!-- 状态栏颜色 -->
+	<color name ="status_bar_color">#ff46acef</color>
+	
+    
+</resources>

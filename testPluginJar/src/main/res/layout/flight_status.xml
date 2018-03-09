@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/dept_city_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="出发机场三字码 例如:PEK"
+        android:text="PEK"/>
+
+    <EditText
+        android:id="@+id/dest_city_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="到达机场三字码 例如:SHA"
+        android:text="SHA"/>
+
+    <EditText
+        android:id="@+id/flight_date_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="日期（2017-01-09）"
+        android:text="2018-03-09"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="月份和日期用0补齐至两位，年月日用-分隔"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
+</LinearLayout>

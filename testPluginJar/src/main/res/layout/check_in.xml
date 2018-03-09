@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ticket_no_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入客票  (一般为13位)"/>
+
+    <EditText
+        android:id="@+id/coupon_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入航段号  (非多段默认为1)"/>
+
+    <EditText
+        android:id="@+id/flight_date_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入航班日期  (例如:2017-04-09)"/>
+
+    <EditText
+        android:id="@+id/flight_no_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入航班号"/>
+
+    <EditText
+
+        android:id="@+id/dept_city_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入出发机场三字码"/>
+
+    <EditText
+        android:id="@+id/dest_city_code_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入终点机场三字码"/>
+
+    <EditText
+        android:id="@+id/passenger_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入旅客姓名"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:text="月份和日期用0补齐至两位，年月日用-分隔"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+
+    <Button
+        android:id="@+id/direct_test_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="不输入以上信息，获取行程后值机"/>
+
+</LinearLayout>

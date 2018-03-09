@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_grey_bg"
+    android:orientation="vertical" >
+
+    <com.umetrip.ckisdk.view.SystemTitle
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_cert_type"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ListItemHeight"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/check_tag_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_cert_type_title"
+            android:text="证件类型" />
+
+        <TextView
+            android:id="@+id/tv_cert_type"
+            style="@style/check_in_input_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/tv_cert_type_title"
+            android:layout_toLeftOf="@+id/iv_arrow"
+            android:layout_marginLeft="40dip"
+            android:hint="@string/input_cert_type_hint"/>
+        
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_arrow"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/checkinfo_arrow"/>
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/ticket_num_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ListItemHeight"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/check_tag_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cert_name"
+            android:text="票号" />
+
+        <EditText
+            android:id="@+id/et_ticket"
+            style="@style/check_in_input_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dip"
+            android:hint="@string/input_tkt_no_hint"
+            android:inputType="phone" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/flight_num_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ListItemHeight"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/check_tag_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="航班号" />
+
+        <EditText
+            android:id="@+id/flight_no_et"
+            style="@style/check_in_input_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dip"
+            android:hint="@string/input_flight_no_hint">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/phone_num_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ListItemHeight"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            style="@style/check_tag_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/check_in_input_textstyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dip"
+            android:hint="@string/input_mobile_no_hint"
+            android:inputType="phone" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_identifyingcode"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            style="@style/check_vericode_input_style"
+            android:layout_weight="3"
+            android:hint="@string/regist_auth_no_hint"
+            android:inputType="number"
+            android:paddingBottom="12dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="12dip"
+            android:singleLine="true"/>
+
+        <Button
+            android:id="@+id/bt_identifyingcode"
+            android:layout_width="0.0dip"
+            android:layout_height="match_parent"
+            style="@style/check_getvericode_btn_style"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/regist_get_auth_no"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/check_login_button_textstyle"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:enabled="false"
+        android:text="下一步"/>
+    
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        style="@style/CustomProgressStyle"/>
+
+ </LinearLayout>

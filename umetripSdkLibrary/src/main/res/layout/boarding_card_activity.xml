@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/general_grey_bg"
+    android:orientation="vertical" >
+
+    <com.umetrip.ckisdk.view.SystemTitle
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- 航班信息 -->
+        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/cki_boardingcard_left_padding"
+        android:paddingRight="@dimen/cki_boardingcard_left_padding"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_aircorp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_aircorp_name"
+            style="@style/cki_result_info_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_flight_no"
+            style="@style/cki_result_info_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_flight_date"
+            style="@style/cki_result_info_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/general_grey_bg" />
+
+    <!-- 起始到达地 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/cki_boardingcard_left_middle_padding"
+        android:paddingRight="@dimen/cki_boardingcard_left_middle_padding"
+        android:paddingTop="15dp" >
+
+        <TextView
+            android:id="@+id/tv_dept_airport"
+            style="@style/cki_result_info_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left|center_vertical"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/iv_plane"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/grey_plane_icon" />
+
+        <TextView
+            android:id="@+id/tv_dest_airport"
+            style="@style/cki_result_info_textstyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:text="" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/ll_passenger_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/boarding_card_passenger_info_item"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/cki_boardingcard_left_large_padding"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/white" />
+
+    <include
+        android:id="@+id/ll_passenger_info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/boarding_card_passenger_info_item"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/cki_boardingcard_left_large_padding"
+        android:paddingTop="10dp" />
+ 	<ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_prompt_message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/general_grey_bg"
+                android:gravity="center"
+                android:padding="5dip"
+                android:singleLine="true"
+                android:textColor="@color/cki_result_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/general_grey_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_dimensionalCode"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+             
+
+            <LinearLayout
+                android:id="@+id/ll_passbook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btn_addto_wallet"
+                    style="@style/cki_result_button_textstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:visibility="gone"
+                    android:layout_weight="1"
+                    android:text="添加到航旅登机牌" />
+
+                <Button
+                    android:id="@+id/btn_user_guide"
+                    style="@style/cki_result_button_textstyle"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="使用指导" />
+            </LinearLayout>
+
+             
+        </LinearLayout>
+     </LinearLayout>
+    </ScrollView>
+</LinearLayout>

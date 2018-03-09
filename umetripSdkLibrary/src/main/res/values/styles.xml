@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/popup_exit</item>
+    </style>
+
+     <style name="popwin_anim_style">
+        <item name="android:windowExitAnimation">@anim/dismiss_anim</item>
+    </style>
+    
+     <style name="Theme_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    
+     <style name="Theme_general" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:configChanges">keyboardHidden|orientation</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">stateHidden|adjustResize</item>
+    </style>
+    
+     <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minWidth">30dip</item>
+        <item name="android:maxWidth">30dip</item>
+        <item name="android:minHeight">30dip</item>
+        <item name="android:maxHeight">30dip</item>
+    </style>
+    
+      <style name="check_tag_textstyle">
+        <item name="android:textColor">#ff484848</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+      <style name="check_info_tag_textstyle">
+        <item name="android:textColor">#ffcdcdce</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    
+      <style name="check_content_black_textstyle">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+       <style name="check_content_green_textstyle">
+        <item name="android:textColor">#ff5cb200</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+     <style name="ffc_card_textstyle">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">12.0dip</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginBottom">12.0dip</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    
+      <style name="check_in_input_textstyle">
+        <item name="android:textColor">@color/check_text_input_color</item>
+        <item name="android:textColorHint">@color/check_text_input_hint_color</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <style name="check_vericode_input_style">
+        <item name="android:textColor">@color/check_text_input_color</item>
+        <item name="android:textColorHint">@color/check_text_input_hint_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    
+     <style name="check_getvericode_btn_style">
+        <item name="android:textColor">@color/check_btn_text_color</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/account_get_vericode_selected</item>
+    </style>
+    
+      <style name="check_login_button_textstyle">
+        <item name="android:textColor">@color/check_btn_text_color</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/check_login_btn_selector</item>
+    </style>
+    
+       <style name="check_in_button_textstyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@drawable/check_in_btn_selector</item>
+    </style>
+    
+     
+    <style name="cki_result_info_textstyle">
+        <item name="android:textColor">@color/cki_result_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="cki_result_title_small_textstyle">
+        <item name="android:textColor">@color/cki_result_title</item>
+        <item name="android:textSize">@dimen/cki_text_small_size</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="boarding_card_info_textstyle">
+        <item name="android:textColor">@color/cki_result_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+    
+    <style name="cki_result_button_textstyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/cki_text_middle_size</item>
+        <item name="android:background">@drawable/cki_btn_selector</item>
+    </style>
+    
+</resources>

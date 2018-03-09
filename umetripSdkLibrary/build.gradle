@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 23
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    compile 'com.google.code.gson:gson:1.7.1'
+    compile 'com.google.code.gson:gson:2.4'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile files('libs/umetripSDK.jar')
+    compile files('libs/logutil-1.5.1.1.jar')
+    compile files('libs/smack-extensions-4.1.9.jar')
+    compile files('libs/smack-tcp-4.1.9.jar')
+    compile files('libs/smack-android-4.1.9.jar')
+    compile files('libs/smack-core-4.1.9.jar')
+    compile files('libs/jxmpp-core-0.6.0.jar')
+    compile files('libs/jxmpp-util-cache-0.6.0.jar')
+    compile files('libs/smack-sasl-provided-4.1.9.jar')
+}

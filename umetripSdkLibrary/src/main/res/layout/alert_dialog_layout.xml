@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/dialog_bg_new">
+    
+    <TextView 
+        android:id="@+id/tv_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30.0dip"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginLeft="20.0dip"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="20.0dip"/>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:background="@color/black"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:orientation="horizontal">
+        
+        <Button 
+            android:id="@+id/bt_cancel"
+            android:layout_width="0.0dip"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="@null"
+        	android:text="取消"
+        	android:textColor="@android:color/black"/>
+        <View 
+            android:id="@+id/view"
+            android:layout_width="1.0dip"
+        	android:layout_height="fill_parent"
+        	android:layout_marginBottom="3.0dip"
+        	android:background="@color/black"/>
+        <Button 
+            android:id="@+id/bt_ok"
+            android:layout_width="0.0dip"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="@null"
+        	android:text="身份认证"
+        	android:textColor="@android:color/black"/>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical" >
+    
+
+    <com.umetrip.ckisdk.view.SystemTitle
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20.0dip"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="47dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/checkinfo_01icon"
+                        android:scaleType="center" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkinfo_left_point"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="#ffffffff"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dip"
+                            android:text="确认行程"
+                            android:textColor="#ff656565"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="47dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/checkinfo_02icon"
+                        android:scaleType="center" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkinfo_left_point"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="#ffffffff"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="选择座位\n填写常旅客卡"
+                            android:textColor="#ff656565"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="47dip"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/checkinfo_03icon"
+                        android:scaleType="center" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/checkinfo_left_point"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="#ffffffff"
+                            android:textSize="11sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dip"
+                            android:text="办理值机"
+                            android:textColor="#ff656565"
+                            android:textSize="11sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="15.0dip"
+                android:background="@drawable/checkinfo_bg"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingLeft="15.0dip"
+                android:paddingRight="15.0dip"
+                android:paddingTop="15.0dip" >
+                
+                <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="3dip"
+                android:lineSpacingExtra="3dp"
+                android:text="值机成功后,可直接使用电子登机牌\n如不支持电子登机牌,需要到机场打印"
+                android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="取消值机注意事项"
+                    android:textColor="#ff656565"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="10.0dip"
+                    android:lineSpacingExtra="5dp"
+                    android:text="1.航班起飞前2小时可取消手机值机\n2.如遇到机场控制等情况不能取消值机,可前往机场柜台办理或联系航空公司"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_line1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="15dip"
+                    android:background="#fffafafa"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkin_checkbox_bg"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/tv_href1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff656565" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5.0dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <CheckBox
+                        android:id="@+id/cb_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkin_checkbox_bg"
+                        android:checked="true" />
+
+                    <TextView
+                        android:id="@+id/tv_href2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff656565" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_line2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:background="#fff3f3f3"
+                    android:visibility="gone" />
+
+                <com.umetrip.ckisdk.view.AlwaysMarqueeTextView
+                    android:id="@+id/tv_activity"
+                    android:ellipsize="marquee"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10.0dip"
+                    android:paddingTop="10.0dip"
+                    android:drawableRight="@drawable/contact_title_nomal"
+                    android:gravity="center"
+                    android:text="活动"
+                    android:textColor="#0285d9"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/iv_line3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:background="#fff3f3f3"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_next"
+                android:layout_width="fill_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="35dip"
+                android:text="下一步"
+                style="@style/check_login_button_textstyle"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

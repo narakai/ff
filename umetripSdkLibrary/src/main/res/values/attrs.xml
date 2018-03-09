@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Panel">
+
+        <!-- Defines panel animation duration in ms. -->
+        <attr name="animationDuration" format="integer" />
+        <!-- Defines panel position on the screen. -->
+        <attr name="position">
+
+            <!-- Panel placed at top of the screen. -->
+            <enum name="top" value="0" />
+            <!-- Panel placed at bottom of the screen. -->
+            <enum name="bottom" value="1" />
+            <!-- Panel placed at left of the screen. -->
+            <enum name="left" value="2" />
+            <!-- Panel placed at right of the screen. -->
+            <enum name="right" value="3" />
+        </attr>
+        <!-- Identifier for the child that represents the panel's handle. -->
+        <attr name="handle" format="reference" />
+        <!-- Identifier for the child that represents the panel's content. -->
+        <attr name="content" format="reference" />
+        <!-- Defines if flying gesture forces linear interpolator in animation. -->
+        <attr name="linearFlying" format="boolean" />
+        <!-- Defines size relative to parent (must be in form: nn%p). -->
+        <attr name="weight" format="fraction" />
+        <!-- Defines opened handle (drawable/color). -->
+        <attr name="openedHandle" format="reference|color" />
+        <!-- Defines closed handle (drawable/color). -->
+        <attr name="closedHandle" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="SmoothButton">
+        <attr name="transitionDrawable" format="reference" />
+        <attr name="transitionDrawableLength" format="integer" />
+        <attr name="transitionTextColorUp" format="color" />
+        <attr name="transitionTextColorDown" format="color" />
+    </declare-styleable>
+    <declare-styleable name="Switcher">
+
+        <!-- Defines switcher animation duration in ms. -->
+        <attr name="animationDuration" />
+        <!-- Defines switcher idle timeout in ms. -->
+        <attr name="idleTimeout" format="integer" />
+        <!-- Defines opened handle (drawable). -->
+        <attr name="decreaseButton" format="reference" />
+        <!-- Defines opened handle (drawable). -->
+        <attr name="increaseButton" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Umetrip">
+        <attr name="maincolor" format="color" />
+        <attr name="point" format="reference" />
+        <attr name="selectedPoint" format="reference" />
+        <attr name="selectedBoard" format="reference" />
+        <attr name="multipoint" format="reference" />
+        <attr name="multiSelectedPoint" format="reference" />
+        <attr name="multiSelectedBoard" format="reference" />
+        <attr name="showTextAboveBottom" format="float" />
+        <attr name="style" format="string" />
+        <attr name="multicolor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="left_block_size" format="dimension" />
+        <attr name="padding_pic" format="dimension" />
+        <attr name="pointradius" format="dimension" />
+        <attr name="indes" format="dimension" />
+        <attr name="outdes" format="dimension" />
+        <attr name="percentiletextSize" format="dimension" />
+        <attr name="yellowWidth" format="dimension" />
+        <attr name="summary_text_big" format="dimension" />
+        <attr name="summary_text_small" format="dimension" />
+        <attr name="summary_plate_left_marging" format="dimension" />
+        <attr name="summary_plate_right_marging" format="dimension" />
+        <attr name="summary_plate_text_big" format="dimension" />
+        <attr name="summary_plate_text_small" format="dimension" />
+        <attr name="summary_plate_text_margingH" format="dimension" />
+        <attr name="summary_plate_text_margingW" format="dimension" />
+        <attr name="summary_plate_up_marging" format="dimension" />
+        <attr name="summary_plate_down_marging" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Ume_SwitchBtn">
+        <attr name="bg_on_resource" format="reference" />
+        <attr name="bg_off_resource" format="reference" />
+        <attr name="bt_resource" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="Ume_seatView">
+        <attr name="max_seat_size" format="dimension" />
+        <attr name="min_seat_size" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ViewPagerIndicator">
+
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference" />
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference" />
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CirclePageIndicator">
+
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" format="boolean" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation" />
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" format="dimension" />
+        <!-- View background -->
+        <attr name="android:background" />
+    </declare-styleable>
+    <declare-styleable name="SlidingMenu">
+        <attr name="mode">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="viewAbove" format="reference" />
+        <attr name="viewBehind" format="reference" />
+        <attr name="behindOffset" format="dimension" />
+        <attr name="behindWidth" format="dimension" />
+        <attr name="behindScrollScale" format="float" />
+        <attr name="touchModeAbove">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="touchModeBehind">
+            <enum name="margin" value="0" />
+            <enum name="fullscreen" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="fadeEnabled" format="boolean" />
+        <attr name="fadeDegree" format="float" />
+        <attr name="selectorEnabled" format="boolean" />
+        <attr name="selectorDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="GifMoviewView">
+        <attr name="gif" format="reference" />
+        <attr name="paused" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="CustomTheme">
+        <attr name="gifMoviewViewStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="RatingBar">
+
+        <!-- View尺寸 -->
+        <attr name="starImageSize" format="dimension" />
+        <!-- 子View数量 -->
+        <attr name="starCount" format="integer" />
+        <!-- 子View右侧间距 -->
+        <attr name="spacingRight" format="integer" />
+        <!-- 空白状态图片 -->
+        <attr name="starEmpty" format="reference" />
+        <!-- 全填充状态图片 -->
+        <attr name="starFill" format="reference" />
+        <!-- 半填充状态图片 -->
+        <attr name="starHalf" format="reference" />
+        <!-- 点击事件开关 -->
+        <attr name="ratingClickable" format="boolean" />
+    </declare-styleable>
+
+</resources>

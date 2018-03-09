@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:liu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffafafa"
+    android:orientation="vertical" >
+
+    <com.umetrip.ckisdk.view.SystemTitle
+        android:id="@+id/title_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="22dip"
+        android:background="@drawable/xiala"
+        android:gravity="center"
+        android:textColor="#ffffffff" />
+
+    <com.umetrip.ckisdk.view.CheckinfoPersonView
+        android:id="@+id/cpv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip" 
+        liu:textSize="@dimen/checkinfo_cp_text_size"/>
+
+    <LinearLayout
+        android:id="@+id/ll_hide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="54.dip"
+            android:layout_marginLeft="15.0dip"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@drawable/checkinfo_bg"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip" >
+            
+            <TextView
+                android:id="@+id/tv_seatNum"
+                android:layout_width="43.0dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ff606366"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_seaticon"
+                android:layout_width="35.0dip"
+                android:layout_height="35.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:layout_toLeftOf="@id/tv_seatNum"
+                android:src="@drawable/checkinfo_seat_icon" />
+
+            <ImageView
+                android:id="@+id/iv_line"
+                android:layout_width="1dip"
+                android:layout_height="40.0dip"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dip"
+                android:layout_toLeftOf="@id/iv_seaticon"
+                android:background="#ffd4d4d4" />
+
+            <RelativeLayout
+                android:layout_toLeftOf="@id/iv_line"
+                android:id="@+id/ll_card"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+                <LinearLayout 
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+	                <TextView
+	                    android:id="@+id/tv_cktitle"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:text="常客卡号"
+	                    android:textColor="#ff898e91"
+	                    android:textSize="16dip" />
+	                
+	                <TextView
+	                    android:visibility="gone"
+	                    android:id="@+id/tv_ckcontent"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="#ff606366"
+	                    android:singleLine="true"
+	                    android:textSize="18dip" />
+                </LinearLayout>
+	                
+	            <ImageView 
+	                android:id="@+id/iv_add_ckk"
+	                android:layout_width="30.0dip"
+					android:layout_height="30.0dip"
+					android:layout_alignParentRight="true"
+					android:layout_marginRight="10.0dip"
+					android:src="@drawable/checkinfo_addbutton"/>
+                
+
+                
+            </RelativeLayout>
+
+            
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:layout_marginTop="15.0dip"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/aa"
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:src="@drawable/seat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="可选择"
+                    android:textColor="#ffa8a9ab" 
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:src="@drawable/seat_unable" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="不可选择"
+                    android:textColor="#ffa8a9ab" 
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:src="@drawable/seat_select" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前选择"
+                    android:textColor="#ffa8a9ab" 
+                    android:textSize="11sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="35.0dip"
+                    android:layout_height="35.0dip"
+                    android:src="@drawable/seat_exit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="紧急出口"
+                    android:textColor="#ffa8a9ab" 
+                    android:textSize="11sp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="15.0dip"
+            android:background="#ffe3e3e3" />
+    </LinearLayout>
+
+    <!--
+             <LinearLayout 
+            android:id="@+id/ll_seat"
+            android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="#fffafafa"
+			android:paddingBottom="15.0dip">
+    -->
+
+    <com.umetrip.ckisdk.view.MyScrollView
+        android:id="@+id/msv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dip"
+        android:background="#fffafafa" >
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_ud"
+            android:layout_width="190dip"
+            android:layout_height="42.0dip"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/greenclassselector" >
+
+            <Button
+                android:id="@+id/bt_down"
+                android:layout_width="89dip"
+                android:layout_height="34dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="3dip"
+                android:background="@drawable/classselector"
+                android:padding="8dip"
+                android:text="下层"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_up"
+                android:layout_width="89dip"
+                android:layout_height="34dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dip"
+                android:background="@null"
+                android:padding="8dip"
+                android:text="上层"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <com.umetrip.ckisdk.view.SeatView
+            android:id="@+id/sv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            liu:max_seat_size = "@dimen/max_seat_size"
+            liu:min_seat_size = "@dimen/min_seat_size"/>
+    </com.umetrip.ckisdk.view.MyScrollView>
+
+</LinearLayout>

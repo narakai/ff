@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="航班号查询"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/deps"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="列表查询"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/attention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="关注列表"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_cki"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="值机"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_cancelcheck"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="取消值机"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_boardingcard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="电子登机牌"
+        android:textSize="20sp"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="绑定"/>
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="上传"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_checkbind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="检查绑定"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="清除数据"
+            android:textSize="20sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/println"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="打印数据"/>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="数据"/>
+</LinearLayout>

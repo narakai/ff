@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rogery.testpluginjar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.rogery.testpluginjar.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+       <activity android:name="com.umetrip.umesdk.flightstatus.activity.FlightListActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.flightstatus.activity.FlightDetailActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.flightstatus.activity.FlightAttentionActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.flightstatus.activity.AirportActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.flightstatus.activity.AirportStaticActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        
+        <activity android:name="com.umetrip.umesdk.checkin.activity.CheckLoginActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.checkin.activity.CheckinfoListActvity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.checkin.activity.CheckInfoSelectSeats" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+         <activity android:name="com.umetrip.umesdk.checkin.activity.CheckinfoFrequentFlyerCardActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+         <activity android:name="com.umetrip.umesdk.checkin.activity.CheckinfoFrequentFlyerCardListActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.checkin.activity.CheckinfoResultActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.checkin.activity.CancelCheckActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.umetrip.umesdk.checkin.activity.BoardingCardActivity" 
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 推送 -->
+
+        <!--测试类的Activity声明-->
+        <activity android:name="com.rogery.testpluginjar.BoardingCardTestActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.rogery.testpluginjar.CancelCheckTestActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.rogery.testpluginjar.CheckInActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.rogery.testpluginjar.FlightStatusActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name="com.rogery.testpluginjar.SearchFlightDetailActivity"
+                  android:configChanges="keyboardHidden|orientation"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!--测试类的Activity声明-->
+
+        <service
+            android:name="com.umetrip.android.msky.push.NotificationService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.umetrip.android.msky.push.NotificationService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.umetrip.android.msky.push.NotificationService$GrayInnerService"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.umetrip.android.msky.push.GrayInnerService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="com.rogery.testpluginjar.TravelSkyPushReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.umetrip.android.msky.app.RECEIVE_MESSAGE" />
+                <action android:name="com.umetrip.android.msky.app.NOTIFICATION_CLICKED" />
+                <action android:name="com.umetrip.android.msky.app.ACTION_NOTIFICATION_MESSAGEARRIVED" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.umetrip.android.msky.push.UMNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.umetrip.android.msky.app.SHOW_NOTIFICATION" />
+                <action android:name="com.umetrip.android.msky.app.NOTIFICATION_CLICKED" />
+                <action android:name="com.umetrip.android.msky.app.DEFAULT" />
+                <action android:name="com.umetrip.android.msky.app.NOTIFICATION_CLEARED" />
+                <action android:name="com.umetrip.android.msky.app.ACTION_NOTIFICATION_MESSAGEARRIVED" />
+            </intent-filter>
+        </receiver>
+
+
+    </application>
+
+</manifest>
