@@ -18,7 +18,7 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横SDK_AND_s01_02.00.0612/testPluginJar/keystore/debug.keystore')
+            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横/testPluginJar/keystore/debug.keystore')
         }
     }
 }
