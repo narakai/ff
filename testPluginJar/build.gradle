@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.0"
 
     defaultConfig {
-        applicationId "com.rogery.testpluginjar"
+        applicationId "com.igola.travel"
         minSdkVersion 17
         targetSdkVersion 23
     }
@@ -18,7 +18,16 @@ android {
     }
     signingConfigs {
         debug {
-            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横SDK_AND_s01_02.00.0612/testPluginJar/keystore/debug.keystore')
+            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横/testPluginJar/keystore/igola.keystore.jks')
+            storePassword "igola4cd"
+            keyAlias "IGolaKey"
+            keyPassword "igola4cd"
+        }
+         release {
+            storeFile file('/Users/laileon/Downloads/Fwd_ 航班动态SDK/航旅纵横/testPluginJar/keystore/igola.keystore.jks')
+            storePassword "igola4cd"
+            keyAlias "IGolaKey"
+            keyPassword "igola4cd"
         }
     }
 }
